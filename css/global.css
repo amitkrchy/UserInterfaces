@@ -1,0 +1,380 @@
+/*
+ * Convert font-size from px to rem with px fallback
+ * @param $size - the value in pixel you want to convert
+ * e.g. p {@include fontSize(12px);}
+ *
+ */
+/****************** Color: Brand Variations *******************/
+/****************** Header Section Color *******************/
+/****************** body Section Color *******************/
+/****************** Section-block Color *******************/
+/****************** Cards Section Color *******************/
+/****************** quick links Color *******************/
+/****************** btns Color *******************/
+/****************** Top Nav*******************/
+/****************** Hamburger Slide Nav *******************/
+/****************** Footer Section Color *******************/
+* {
+  transition: all 0.3s ease 0s;
+}
+
+html,
+body {
+  font-family: "" Segoe UI Semilight "," Segoe UI "," Segoe ",Tahoma,Helvetica,Arial,sans-serif", sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+body {
+  background-color: #ECECEC;
+  color: #0D223F;
+  padding-top: 60px;
+  /* font-size: $size; */
+  font-size: 0.875rem;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding-bottom: 0;
+  }
+}
+
+.container {
+  max-width: 1200px;
+}
+
+.section-box {
+  background-color: #fff;
+  border: 1px solid #D0D1D3;
+  padding: 10px;
+}
+
+.section-box h3 {
+  /* font-size: $size; */
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding-bottom: 10px;
+  margin: 0;
+}
+
+/****************** Top Nav Section*******************/
+.top-nav {
+  background-color: #000;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 9;
+}
+
+.top-nav ul {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.top-nav ul li {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  margin: 0 1%;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .top-nav ul li {
+    margin: 0 0.5%;
+  }
+}
+
+.top-nav ul li a {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  height: 100%;
+  padding: 0 10px;
+  /* font-size: $size; */
+  font-size: 1rem;
+}
+
+.top-nav ul li a label {
+  margin: 0 0 0 5px;
+}
+
+@media (max-width: 768px) {
+  .top-nav ul li a label {
+    /* font-size: $size; */
+    font-size: 0.8125rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .top-nav ul li a label {
+    display: none;
+  }
+}
+
+.top-nav ul li a:hover {
+  background-color: #057EE1;
+  text-decoration: none;
+}
+
+.top-nav ul li.search-box {
+  margin-left: auto;
+}
+
+.top-nav ul li.search-box .search-input {
+  border-radius: 50px;
+  height: 36px;
+  border: 0;
+  background: url(../assets/icon/search.svg) no-repeat 94% center #fff;
+}
+
+/****************** Application-btns-Start*******************/
+.btn {
+  font-weight: 600;
+  color: #fff;
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.btn:hover, .btn:focus, .btn:active {
+  color: #fff;
+  box-shadow: none !important;
+}
+
+.btn-primary:disabled,
+.btn-primary {
+  background-color: #057EE1;
+  border-color: #057EE1;
+}
+
+.btn-primary:disabled:hover, .btn-primary:disabled:focus,
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #1f97fa !important;
+  border-color: #057EE1;
+}
+
+.btn-secondary:disabled,
+.btn-secondary {
+  background-color: #F2F7FF;
+  border-color: #F2F7FF;
+}
+
+.btn-secondary:disabled:hover, .btn-secondary:disabled:focus,
+.btn-secondary:hover,
+.btn-secondary:focus {
+  background-color: white !important;
+  border-color: #F2F7FF !important;
+}
+
+.btn-third:disabled,
+.btn-third {
+  background-color: #E29E19;
+  border-color: #E29E19;
+  height: 30px;
+}
+
+.btn-third:disabled:hover, .btn-third:disabled:focus, .btn-third:disabled:active,
+.btn-third:hover,
+.btn-third:focus,
+.btn-third:active {
+  background-color: #eab244 !important;
+  border-color: #E29E19 !important;
+}
+
+.add-btn:disabled,
+.add-btn {
+  background-color: #70D600;
+  border-color: #70D600;
+  min-width: 68px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.add-btn:disabled .material-icons,
+.add-btn .material-icons {
+  font-size: 20px;
+}
+
+.add-btn:disabled:hover, .add-btn:disabled:focus, .add-btn:disabled:active,
+.add-btn:hover,
+.add-btn:focus,
+.add-btn:active {
+  background-color: #7bea00 !important;
+  border-color: #70D600 !important;
+}
+
+.delete-btn:disabled,
+.delete-btn {
+  background-color: #CF2E2E;
+  border-color: #CF2E2E;
+  min-width: 31px;
+  height: 31px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.delete-btn:disabled .material-icons,
+.delete-btn .material-icons {
+  font-size: 22px;
+}
+
+.delete-btn:disabled:hover, .delete-btn:disabled:focus, .delete-btn:disabled:active,
+.delete-btn:hover,
+.delete-btn:focus,
+.delete-btn:active {
+  background-color: #da5656 !important;
+  border-color: #CF2E2E !important;
+}
+
+.edit-btn:disabled,
+.edit-btn {
+  background-color: #E29E19;
+  border-color: #E29E19;
+  min-width: 31px;
+  height: 31px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.edit-btn:disabled .material-icons,
+.edit-btn .material-icons {
+  font-size: 22px;
+}
+
+.edit-btn:disabled:hover, .edit-btn:disabled:focus, .edit-btn:disabled:active,
+.edit-btn:hover,
+.edit-btn:focus,
+.edit-btn:active {
+  background-color: #eab244 !important;
+  border-color: #E29E19 !important;
+}
+
+/****************** Hamburger slide menu CSS start*******************/
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  background-color: rgba(13, 34, 63, 0.98);
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+  /* The navigation menu links */
+}
+
+.sidenav a {
+  text-decoration: none;
+  /* font-size: $size; */
+  font-size: 1rem;
+  color: #fff;
+  display: block;
+  width: 100%;
+  padding: 10px 10px;
+  float: left;
+  /* Position and style the close button (top right corner) */
+}
+
+.sidenav a:hover {
+  background-color: #057EE1;
+}
+
+.sidenav a.closebtn {
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  right: 1px;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+/****************** Hamburger slide menu CSS End*******************/
+/****************** Footer Section*******************/
+.page-footer {
+  background-color: #0D223F;
+  width: 100%;
+  margin-top: 2%;
+}
+
+.page-footer .container {
+  display: flex;
+  align-items: center;
+  min-height: 75px;
+}
+
+@media (max-width: 576px) {
+  .page-footer .container {
+    height: auto;
+    flex-direction: column;
+  }
+}
+
+.page-footer .container .copyright-msg {
+  color: #fff;
+  /* font-size: $size; */
+  font-size: 0.875rem;
+  margin-right: auto;
+}
+
+@media (max-width: 576px) {
+  .page-footer .container .copyright-msg {
+    min-width: 100%;
+    text-align: center;
+    margin: 14px 0 30px 0;
+  }
+}
+
+.page-footer .container .social-links {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 576px) {
+  .page-footer .container .social-links {
+    justify-content: center;
+    margin: 0 0 14px 0;
+  }
+}
+
+.page-footer .container .social-links a {
+  display: block;
+  margin: 0 10px;
+  text-decoration: none;
+  border-radius: 100%;
+  min-width: 36px;
+  border: 2px solid #0D223F;
+}
+
+.page-footer .container .social-links a:hover {
+  border: 2px solid #fff;
+}
+/*# sourceMappingURL=global.css.map */

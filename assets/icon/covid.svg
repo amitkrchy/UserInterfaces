@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+  <g id="Group_1419" data-name="Group 1419" transform="translate(-23 -28)">
+    <path id="virus_1_" data-name="virus (1)" d="M45,21a3,3,0,0,0-2.6,1.5H39.679a15.673,15.673,0,0,0-3.537-8.521l1.932-1.932a3,3,0,1,0-2.121-2.121l-1.932,1.932A15.673,15.673,0,0,0,25.5,8.321V5.6a3,3,0,1,0-3,0V8.321a15.673,15.673,0,0,0-8.521,3.537L12.047,9.926a3,3,0,1,0-2.121,2.121l1.932,1.932A15.673,15.673,0,0,0,8.321,22.5H5.6a3,3,0,1,0,0,3H8.321a15.673,15.673,0,0,0,3.537,8.521L9.926,35.953a3,3,0,1,0,2.121,2.121l1.932-1.932A15.673,15.673,0,0,0,22.5,39.679V42.4a3,3,0,1,0,3,0V39.679a15.673,15.673,0,0,0,8.521-3.537l1.932,1.932a3,3,0,1,0,2.121-2.121l-1.932-1.932A15.673,15.673,0,0,0,39.679,25.5H42.4A3,3,0,1,0,45,21ZM19.031,23.25a2.625,2.625,0,1,1,2.625-2.625A2.628,2.628,0,0,1,19.031,23.25Zm6.469,9a3,3,0,1,1,3-3A3,3,0,0,1,25.5,32.25Zm5.25-10.5A2.25,2.25,0,1,1,33,19.5,2.253,2.253,0,0,1,30.75,21.75Z" transform="translate(23 28)" fill="#0d223f"/>
+    <circle id="Ellipse_41" data-name="Ellipse 41" cx="3" cy="3" r="3" transform="translate(44 28)" fill="#5099ff"/>
+    <circle id="Ellipse_42" data-name="Ellipse 42" cx="3" cy="3" r="3" transform="translate(59 34)" fill="#5099ff"/>
+    <circle id="Ellipse_43" data-name="Ellipse 43" cx="3" cy="3" r="3" transform="translate(65 49)" fill="#5099ff"/>
+    <circle id="Ellipse_44" data-name="Ellipse 44" cx="3" cy="3" r="3" transform="translate(59 64)" fill="#5099ff"/>
+    <circle id="Ellipse_45" data-name="Ellipse 45" cx="3" cy="3" r="3" transform="translate(44 70)" fill="#5099ff"/>
+    <circle id="Ellipse_46" data-name="Ellipse 46" cx="3" cy="3" r="3" transform="translate(29 64)" fill="#5099ff"/>
+    <circle id="Ellipse_47" data-name="Ellipse 47" cx="3" cy="3" r="3" transform="translate(23 49)" fill="#5099ff"/>
+    <circle id="Ellipse_48" data-name="Ellipse 48" cx="3" cy="3" r="3" transform="translate(29 34)" fill="#5099ff"/>
+  </g>
+</svg>

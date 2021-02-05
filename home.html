@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Intranet Portal</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap-4.4.1.css" rel="stylesheet" />
+
+    <!-- custom-css -->
+    <link href="css/global.css" rel="stylesheet" />
+    <link href="css/home.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Side nav -->
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#">IT</a>
+      <a href="#">Finance</a>
+      <a href="#">HR</a>
+      <a href="#">Marketing</a>
+      <a href="#">Sales</a>
+      <a href="#">Operation Graphic</a>
+      <a href="#">Legal and Compliance</a>
+    </div>
+
+<!-- Top nav -->
+<Nav class="container-fluid top-nav">
+    <ul>
+      <li>
+        <a href="#" onclick="openNav()"> 
+          <img src="assets/icon/hamburger-menu.svg"/> </a>
+      </li>
+      <li>
+        <a href="#"> 
+          <img src="assets/icon/home.svg"/>
+          <label>Home</label>
+        </a>
+      </li>
+      <li>
+        <a href="#"> 
+          <img src="assets/icon/globe.svg"/>
+          <label>Corporation</label>
+        </a>
+      </li>
+      <li>
+        <a href="#"> 
+          <img src="assets/icon/emp-book.svg"/>
+          <label>Employee Address Book</label>
+        </a>
+      </li>
+      <li class="search-box">
+        <input class="form-control search-input" type="text" placeholder="Search">
+      </li>
+    </ul>
+</Nav>
+
+<!-- Top Banner -->
+<div class="container-fluid home-page-banner">
+  <div class="container">
+<div class="banner-info">
+<h3>"Did You Know"</h3>
+<h4>Company has announced its commitment to Govt's Clean Energy Program.
+</h4>
+<p>
+  This commitment is another significant step in continued cultural development and investment in sustainability and corporate social responsibility programs at Corporation - a name that carries nearly a century of commitment to technological evolution and responsiveness to customer needs.
+</p>
+<a href="#">Learn More</a>
+</div>
+</div>
+</div>
+    <div class="container">
+      <!-- Card -->
+      <div class="card-container">
+        <a href="#" class="custom-card message">
+          <div class="img-box">
+            <img src="assets/images/spceo.jpg" />
+          </div>
+          <h3>Message from <span>CEO</span></h3>
+        </a>
+        <a href="#" class="custom-card corporate">
+          <div class="img-box">
+            <img src="assets/images/corp-com.jpg" />
+          </div>
+          <h3>Corporate<span>Communication</span></h3>
+        </a>
+        <a href="#" class="custom-card event">
+          <div class="img-box">
+            <img src="assets/images/current-event.jpg" />
+          </div>
+          <h3>Current<span>Events</span></h3>
+        </a>
+      </div>
+      <!-- My-links -->
+      <section class="section-box my-links">
+        <h3>My links</h3>
+        <div class="accordion" id="myLinks-accordion">
+          <div class="card">
+            <div class="card-header" id="NorthAmerica-heading">
+              <h4 class="mb-0">
+                <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#NorthAMeric" aria-expanded="true" aria-controls="NorthAMeric">
+                  North America
+                </button>
+              </h4>
+            </div>
+        
+            <div id="NorthAMeric" class="collapse" aria-labelledby="NorthAmerica-heading" data-parent="#myLinks-accordion">
+              <div class="card-body">
+                <div class="my-links-body">
+                  <h5>North America</h5>
+                  <ul>
+                    <li>
+                      <a href="#"><img src="assets/images/usa.png" />
+                      <label>United States</label>
+                    </a>
+                    </li>
+                  </ul>
+                  <div class="clearfix"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="APAC-heading">
+              <h4 class="mb-0">
+                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#APAC" aria-expanded="false" aria-controls="APAC">
+                  APAC
+                </button>
+              </h4>
+            </div>
+            <div id="APAC" class="collapse show" aria-labelledby="APAC-heading" data-parent="#myLinks-accordion">
+              <div class="card-body">
+                <div class="my-links-body ">
+                  <h5>APAC</h5>
+                  <ul>
+                    <li>
+                      <a href="#"><img src="assets/images/china.png" />
+                      <label>China</label>
+                    </a>
+                    </li>
+                    <li>
+                      <a href="#"><img src="assets/images/vietnam.png" />
+                      <label>Vietnam</label>
+                    </a>
+                    </li>
+                    <li>
+                      <a href="#"><img src="assets/images/thailand.png" />
+                      <label>Thailand</label>
+                    </a>
+                    </li>
+                    <li>
+                      <a href="#"><img src="assets/images/south-korea.png" />
+                      <label>South Korea</label>
+                    </a>
+                    </li>
+                    <li>
+                      <a href="#"><img src="assets/images/taiwan.png" />
+                      <label>Taiwan</label>
+                    </a>
+                    </li>
+                  </ul>
+                  <div class="clearfix"></div>
+                </div>
+                <div class="clearfix"></div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="EMEA-heading">
+              <h4 class="mb-0">
+                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#EMEA" aria-expanded="false" aria-controls="EMEA">
+                  EMEA
+                </button>
+              </h4>
+            </div>
+            <div id="EMEA" class="collapse" aria-labelledby="EMEA-heading" data-parent="#myLinks-accordion">
+              <div class="card-body">
+                <div class="my-links-body">
+                  <h5>EMEA</h5>
+                  <ul>
+                    <li>
+                      <a href="#"><img src="assets/images/germany.png" />
+                      <label>Germany</label>
+                    </a>
+                    </li>
+                    <li>
+                      <a href="#"><img src="assets/images/italy.png"
+                      <label>Italy</label>
+                    </a>
+                    </li>
+                    <li>
+                      <a href="#"><img src="assets/images/united-kingdom.png"
+                      <label>United Kingdom</label>
+                    </a>
+                    </li>
+                  </ul>
+                  <div class="clearfix"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Global quick-links -->
+      <section class="section-box global-quick-links">
+        <h3>Global Quick Links</h3>
+        <ul>
+          <a href="#">
+            <li>
+              <div class="icon-box">
+                <img src="assets/icon/ethics-hotline.svg" />
+              </div>
+              <h4>Ethics Hotline</h4>
+            </li>
+          </a>
+          <a href="#">
+            <li>
+              <div class="icon-box">
+                <img src="assets/icon/salesforce-team.svg" />
+              </div>
+              <h4>Sales Team Only</h4>
+            </li>
+          </a>
+          <a href="#">
+            <li>
+              <div class="icon-box">
+                <img src="assets/icon/forms.svg" />
+              </div>
+              <h4>Forms and Documents</h4>
+            </li>
+          </a>
+          <a href="#">
+            <li>
+              <div class="icon-box">
+                <img src="assets/icon/code-conduct.svg" />
+              </div>
+              <h4>Code of Conduct</h4>
+            </li>
+          </a>
+          <a href="#">
+            <li>
+              <div class="icon-box">
+                <img src="assets/icon/covid.svg" />
+              </div>
+              <h4>Covid -19</h4>
+            </li>
+          </a>
+          <a href="#">
+            <li>
+              <div class="icon-box">
+                <img src="assets/icon/leadership.svg" />
+              </div>
+              <h4>Leadership</h4>
+            </li>
+          </a>
+          <a href="#">
+            <li>
+              <div class="icon-box">
+                <img src="assets/icon/marketing-template.svg" />
+              </div>
+              <h4>Marketing Templates</h4>
+            </li>
+          </a>
+          <a href="#">
+            <li>
+              <div class="icon-box">
+                <img src="assets/icon/Career.svg" />
+              </div>
+              <h4>Career Information</h4>
+            </li>
+          </a>
+          <a href="#">
+            <li>
+              <div class="icon-box">
+                <img src="assets/icon/policies.svg" />
+              </div>
+              <h4>Policies</h4>
+            </li>
+          </a>
+          
+        </ul>
+      </section>
+
+ <!-- Functional Sites -->
+      <section class="section-box functional-sites">
+        <h3>Functional Sites</h3>
+        <ul>
+          <li>
+            <a href="#">
+            <h4>Information Technology</h4>
+            <div class="thumb-pic-box">
+              <img class="thum-pic" src="assets/images/it.jpg" />
+              <div class="overlay-box">
+                <div class="icon-box">
+                  <img src="assets/icon/information_tech-ico.svg"/>
+                </div>
+              </div>
+            </div>         
+          </a>
+          </li>
+          <li>
+            <a href="#">
+            <h4>Finance</h4>
+            <div class="thumb-pic-box">
+              <img class="thum-pic" src="assets/images/finance.jpg" />
+              <div class="overlay-box">
+                <div class="icon-box">
+                  <img src="assets/icon/finance-ico.svg"/>
+                </div>
+              </div>
+            </div>         
+          </a>
+          </li>
+          <li>
+            <a href="#">
+            <h4>Human Resource</h4>
+            <div class="thumb-pic-box">
+              <img class="thum-pic" src="assets/images/hr.jpg" />
+              <div class="overlay-box">
+                <div class="icon-box">
+                  <img src="assets/icon/hr-ico.svg"/>
+                </div>
+              </div>
+            </div>         
+          </a>
+          </li>
+          <li>
+            <a href="#">
+            <h4>Marketing</h4>
+            <div class="thumb-pic-box">
+              <img class="thum-pic" src="assets/images/marketing.jpg" />
+              <div class="overlay-box">
+                <div class="icon-box">
+                  <img src="assets/icon/marketing-ico.svg"/>
+                </div>
+              </div>
+            </div>         
+          </a>
+          </li>
+          <li>
+            <a href="#">
+            <h4>Sales</h4>
+            <div class="thumb-pic-box">
+              <img class="thum-pic" src="assets/images/sales.jpg" />
+              <div class="overlay-box">
+                <div class="icon-box">
+                  <img src="assets/icon/sales-ico.svg"/>
+                </div>
+              </div>
+            </div>         
+          </a>
+          </li>
+          <li>
+            <a href="#">
+            <h4>Operations</h4>
+            <div class="thumb-pic-box">
+              <img class="thum-pic" src="assets/images/operations.jpg" />
+              <div class="overlay-box">
+                <div class="icon-box">
+                  <img src="assets/icon/operations-ico.svg"/>
+                </div>
+              </div>
+            </div>         
+          </a>
+          </li>
+          <li>
+            <a href="#">
+            <h4>Legal and Compliance</h4>
+            <div class="thumb-pic-box">
+              <img class="thum-pic" src="assets/images/legal.jpg" />
+              <div class="overlay-box">
+                <div class="icon-box">
+                  <img src="assets/icon/legal-ico.svg"/>
+                </div>
+              </div>
+            </div>         
+          </a>
+          </li>
+        </ul>
+      </section>
+      <div class="clearfix"></div>
+    </div>
+    <!-- Footer-->
+    <footer class="page-footer">
+  <div class="container"> 
+    <div class="copyright-msg">Copyright © 2020 Corporation. All Rights Reserved.</div>
+      <div class="social-links">
+        <a href="#"> <img src="assets/icon/facebook.svg"/> </a>
+        <a href="#"> <img src="assets/icon/twitter.svg"/></a>
+        <a href="#"> <img src="assets/icon/linkedin.svg"/></a>
+        <a href="#"> <img src="assets/icon/youtube.svg"/></a>
+        <a href="#"> <img src="assets/icon/aws.svg"/> </a>
+      </div>
+    </div>  
+    </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap-4.4.1.js"></script>
+
+    <!-- Custom-Js -->
+    <script src="js/custom.js"></script>
+  </body>
+</html>

@@ -1,0 +1,224 @@
+/*
+ * Convert font-size from px to rem with px fallback
+ * @param $size - the value in pixel you want to convert
+ * e.g. p {@include fontSize(12px);}
+ *
+ */
+/****************** Color: Brand Variations *******************/
+/****************** Header Section Color *******************/
+/****************** body Section Color *******************/
+/****************** Section-block Color *******************/
+/****************** Cards Section Color *******************/
+/****************** quick links Color *******************/
+/****************** btns Color *******************/
+/****************** Top Nav*******************/
+/****************** Hamburger Slide Nav *******************/
+/****************** Footer Section Color *******************/
+.home-page-banner {
+  background: url(../assets/images/header-2-sidesite.jpg) no-repeat center top #0EAA9F;
+  min-height: 263px;
+  margin-bottom: 2%;
+  background-color: #0D223F;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-page-banner .banner-title {
+  color: #0D223F;
+  text-align: center;
+  width: 100%;
+  /* font-size: $size; */
+  font-size: 2.25rem;
+  font-weight: bold;
+}
+
+.home-page-banner .banner-title span {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.left-column {
+  width: 31.33%;
+  margin: 0 1%;
+  float: left;
+}
+
+.right-column {
+  width: 64.6%;
+  margin: 0 1%;
+  float: left;
+}
+
+.my-news {
+  width: 100%;
+  margin: 0 0 2% 0;
+  float: left;
+}
+
+.my-news ul {
+  margin: 0;
+  padding: 0 0 10px 0;
+  width: 100%;
+}
+
+.my-news ul li {
+  margin: 0 0 10px 0;
+  padding: 10px 0;
+  width: 100%;
+  list-style: none;
+  border-bottom: 1px solid #707070;
+}
+
+.my-news ul li:last-child {
+  border: 0;
+}
+
+.my-news ul li .news-header {
+  display: flex;
+  align-items: flex-start;
+}
+
+.my-news ul li .news-header a {
+  text-decoration: none;
+  color: #0D223F;
+}
+
+.my-news ul li .news-header a:hover {
+  color: #057EE1;
+}
+
+.my-news ul li .news-header img {
+  margin: 0 10px 10px 0;
+}
+
+.my-news ul li .news-header h4 {
+  /* font-size: $size; */
+  font-size: 1.1875rem;
+  margin: 0;
+  padding: 0;
+}
+
+.my-news ul li .news-intro {
+  margin: 0;
+  padding: 0 0 10px 0;
+}
+
+.quick-links {
+  width: 100%;
+  margin: 0 0 3% 0;
+  float: left;
+  box-sizing: border-box;
+}
+
+.quick-links ul {
+  margin: 0;
+  padding: 0;
+  display: block;
+  float: left;
+  width: 100%;
+}
+
+.quick-links ul a {
+  display: block;
+  width: 31.33%;
+  float: left;
+  margin: 1.5% 1%;
+}
+
+@media (max-width: 576px) {
+  .quick-links ul a {
+    width: 100%;
+    margin: 0 0 14px 0;
+  }
+}
+
+.quick-links ul a li {
+  list-style: none;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  box-shadow: #ccc 1px 1px 5px;
+  min-height: 100px;
+}
+
+.quick-links ul a li .icon-box {
+  min-width: 94px;
+  height: 100px;
+  background-color: #F2F7FF;
+  border-right: 4px solid #057EE1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 1024px) {
+  .quick-links ul a li .icon-box {
+    min-width: 85px;
+  }
+}
+
+.quick-links ul a li .icon-box::after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -17px;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid #057EE1;
+  transform: translate(-50%, -50%);
+}
+
+.quick-links ul a li h4 {
+  text-decoration: none;
+  /* font-size: $size; */
+  font-size: 1.125rem;
+  margin: 0;
+  padding: 0 0 0 15px;
+  font-weight: 600;
+  color: #0D223F;
+}
+
+@media (max-width: 1024px) {
+  .quick-links ul a li h4 {
+    /* font-size: $size; */
+    font-size: 0.9375rem;
+  }
+}
+
+.quick-links ul a:hover {
+  text-decoration: none;
+}
+
+.quick-links ul a:hover li {
+  background-color: #0D223F;
+}
+
+.quick-links ul a:hover li .icon-box {
+  border-color: #F2F7FF;
+}
+
+.quick-links ul a:hover li .icon-box::after {
+  border-left-color: #F2F7FF;
+}
+
+.quick-links ul a:hover li .icon-box img {
+  transform: scale(1.2, 1.2);
+}
+
+.quick-links ul a:hover li h4 {
+  color: #fff;
+  text-decoration: none;
+}
+
+.documents {
+  width: 100%;
+  margin: 0 0 3% 0;
+  float: left;
+  box-sizing: border-box;
+  
+}
+/*# sourceMappingURL=subsite.css.map */

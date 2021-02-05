@@ -1,0 +1,612 @@
+@import "screen-size";
+@import "brand-color";
+
+//Top Banner
+.home-page-banner{
+    background: url(../assets/images/banner.png) no-repeat center top #0EAA9F;
+    min-height: 263px;
+    margin-bottom: 2%;
+    color:#fff;
+
+    @include lg {
+        background-position: -46px bottom;
+      }
+
+      @include md {
+        background-position: -22px bottom;
+        background-size: 110% auto;
+      }
+
+      @include sm {
+        background-position: left top;
+        background-size: 298% auto;
+        margin-bottom: 14px;
+      }
+
+    .banner-info{
+        margin-left: 35%;
+        display: flex;
+        padding-top: 20px;
+        flex-direction: column;
+
+        @include lg {
+            margin-left: 40%;
+            padding-top: 10px;
+          }
+
+          @include md {
+            margin-left: 30%;
+            padding-top: 10px;
+          }
+
+          @include sm {
+            margin-left: 0%;
+           padding-top: 228px;
+           align-items: center;
+          }
+        
+
+        h3{
+            font-weight: bold;
+            @include fontSize(map-get($fontSize, "2200"));
+
+            @include lg {
+                @include fontSize(map-get($fontSize, "1900"));
+              }
+
+              @include sm {
+                  text-align: center;
+              }
+        }
+
+        h4{
+            font-weight: 600;
+            @include fontSize(map-get($fontSize, "1400"));
+        }
+
+        @include lg {
+            @include fontSize(map-get($fontSize, "1200"));
+          }
+
+          @include sm {
+            text-align: center;
+        }
+
+        p{
+            @include fontSize(map-get($fontSize, "1200"));
+            margin: 10px 0 0 0;
+            line-height: 24px;
+
+            @include lg {
+                @include fontSize(map-get($fontSize, "900"));
+              }
+
+              @include md {
+                margin: 0;
+              }
+
+              @include sm {
+                text-align: center;
+                margin: 20px 0;
+            }
+        }
+
+        a{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 35px;
+            background-color: #EC8638;
+            color:#fff;
+            text-decoration: none;
+            width: 124px;
+            align-self: flex-end;
+            border-radius: 20px;
+            @include fontSize(map-get($fontSize, "900"));
+            font-weight: 600;
+            text-transform: uppercase;
+
+            @include lg {
+                margin: 0 0 20px 0;
+              }
+
+              
+            @include sm {
+               align-self: center;
+              }
+
+            &:hover{
+                background-color: #FB7915;
+            }
+        }
+    }
+}
+
+// My cards
+.card-container {
+  width: 100%;
+  flex-direction: row;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 2%;
+
+  @include md {
+    margin-bottom: 0;
+  }
+
+  @include sm {
+    flex-direction: column;
+  }
+
+  .custom-card {
+    width: 31.33%;
+    border: 1px solid #d0d1d3;
+    background-color: $cardbgColor;
+    display: flex;
+    justify-content: spae-between;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 1%;
+
+    @include md {
+      width: 48%;
+      margin-bottom: 2%;
+    }
+
+    @include sm {
+      width: 100%;
+      margin: 0 0 15px 0;
+    }
+
+    .img-box {
+      min-width: 144px;
+      position: relative;
+
+      &::after {
+        display: block;
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: -7px;
+        width: 0;
+        height: 0;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        border-right: 10px solid $cardbgColor;
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    h3 {
+      margin: 0;
+      padding: 0;
+      @include fontSize(map-get($fontSize, "1300"));
+      margin-left: 20px;
+      font-weight: normal;
+      color: $bodyTxtColor;
+
+      span {
+        @include fontSize(map-get($fontSize, "1700"));
+        font-weight: 600;
+        display: inline-block;
+        width: 100%;
+
+        @include lg {
+          @include fontSize(map-get($fontSize, "1200"));
+        }
+      }
+
+      &::before {
+        display: block;
+        content: "";
+        width: 1px;
+        height: 1px;
+        opacity: 0;
+        background: url(../assets/icon/message.svg) no-repeat center center;
+      }
+    }
+
+    &.corporate {
+      h3 {
+        &::before {
+          background: url(../assets/icon/corporate.svg) no-repeat center center;
+        }
+      }
+    }
+
+    &.event {
+      h3 {
+        &::before {
+          background: url(../assets/icon/event.svg) no-repeat center center;
+        }
+      }
+    }
+
+    &:hover {
+      background-color: $cardhoverColor;
+      border-color: $cardhoverBrdrColor;
+      text-decoration: none;
+
+      .img-box {
+        &::after {
+          border-right: 10px solid $cardhoverColor;
+        }
+      }
+
+      h3 {
+        color: $cardhoverBrdrColor;
+        margin-top: 18px;
+
+        &::before {
+          height: 38px;
+          width: 38px;
+          opacity: 0.9;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}
+
+// My Links
+.my-links {
+  width: 31.33%;
+  margin: 0 1%;
+  float: left;
+  min-height: 451px;
+  @include md {
+    min-height: 40px;
+  }
+  h3 {
+    border-bottom: 1px solid #707070;
+  }
+
+  #myLinks-accordion {
+    .card {
+      border: 0;
+      border-bottom: 1px solid #707070;
+      border-radius: 0;
+    }
+
+    .card-header {
+      background-color: #fff;
+      padding: 0 5px;
+      border: 0;
+    }
+
+    button.btn-link {
+      @include fontSize(map-get($fontSize, "1100"));
+      font-weight: normal;
+      text-decoration: none;
+      background: url(../assets/icon/minus-sign.png) no-repeat 5px center;
+      padding: 4px 0 4px 30px;
+      color: #000;
+
+      &.collapsed {
+        background-image: url(../assets/icon/plus-sign.png);
+        color: #a2a2a2;
+      }
+    }
+
+    .card-body {
+      padding: 0;
+    }
+
+  }
+
+  @include md {
+    width: 100%;
+    margin: 1% 0;
+  }
+  .my-links-body {
+    background: url(../assets/images/map.png) no-repeat top center #fff;
+    background-size: contain;
+  h5 {
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    @include fontSize(map-get($fontSize, "900"));
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+    display: block;
+    float: left;
+    width: 100%;
+    min-height: 240px;
+
+    @include md {
+        min-height: 40px;
+      }
+
+    li {
+      display: block;
+      float: left;
+      text-align: center;
+      list-style: none;
+      width: 31.33%;
+      margin: 3% 1%;
+
+      a {
+        color:#505050;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        img{
+            border-radius: 100%;
+            border:2px solid #fff;
+            box-shadow: #ccc 1px 1px 5px;
+            max-width: 80px;
+            width:100%;
+            height: auto;
+        }
+
+        label {
+            text-align:center;
+            width:100%;
+            display: block;
+          }
+
+        &:hover {
+            text-decoration: none;
+            color: primaryColor("200");
+
+            img{
+                border:2px solid primaryColor("200");
+            }
+
+        }
+
+      }
+    }
+  }
+
+}
+}
+
+// Global quick-links
+.global-quick-links {
+  width: 64.6%;
+  margin: 0 1%;
+  float: left;
+  box-sizing: border-box;
+  min-height: 451px;
+
+  @include md {
+    width: 100%;
+    margin: 1% 0;
+    min-height: 40px;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    display: block;
+    float: left;
+    width: 100%;
+    a {
+      display: block;
+      width: 31.33%;
+      float: left;
+      margin: 1.5% 1%;
+
+      @include sm {
+        width: 100%;
+        margin: 0 0 14px 0;
+      }
+
+      li {
+        list-style: none;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        box-shadow: #ccc 1px 1px 5px;
+        min-height: 100px;
+
+        .icon-box {
+          min-width: 94px;
+          height: 100px;
+          background-color: $iconBoxbgColor;
+          border-right: 4px solid $iconBoxbrdrColor;
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          @include lg {
+            min-width: 85px;
+          }
+
+          &::after {
+            display: block;
+            content: "";
+            position: absolute;
+            top: 50%;
+            right: -17px;
+            width: 0;
+            height: 0;
+            border-top: 10px solid transparent;
+            border-bottom: 10px solid transparent;
+            border-left: 10px solid $iconBoxbrdrColor;
+            transform: translate(-50%, -50%);
+          }
+        }
+
+        h4 {
+          text-decoration: none;
+          @include fontSize(map-get($fontSize, "1100"));
+          margin: 0;
+          padding: 0 0 0 15px;
+          font-weight: 600;
+          color: $quickLinktxtColor;
+
+          @include lg {
+            @include fontSize(map-get($fontSize, "800"));
+          }
+        }
+      }
+
+      &:hover {
+        text-decoration: none;
+
+        li {
+          background-color: $quickLinkBgHovrColor;
+          .icon-box {
+            border-color: $iconBoxbrdrhoverColor;
+
+            &::after {
+              border-left-color: $iconBoxbrdrhoverColor;
+            }
+
+            img {
+              transform: scale(1.2, 1.2);
+            }
+          }
+
+          h4 {
+            color: $quickLinktxtHoverColor;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Functional Sites 
+.functional-sites{
+    width:98%;
+    margin: 2% 1% 0 1%;
+    float: left;
+
+    @include md {
+        width: 100%;
+        margin: 1% 0;
+      }
+
+      @include sm {
+        width: 100%;
+        margin: 14px 0;
+      }
+
+      ul{
+          display: block;
+          margin: 0;
+          padding: 0;
+          width: 100%;
+          float: left;
+
+          li{
+              display: block;
+              width: 31.33%;
+              list-style: none;
+              padding: 0;
+              margin: 1%;
+              float: left;
+
+              @include md {
+                width: 48%;
+                margin: 1%;
+              }
+
+              @include sm {
+                width: 100%;
+                margin: 0 0 14px 0;
+              }
+                a{
+                    text-decoration: none;
+
+                    h4{
+                        background-color: primaryColor("100");
+                        color:#fff;
+                        margin: 0;
+                        padding: 10px;
+                        @include fontSize(map-get($fontSize, "1100"));
+                        font-weight: 600;
+                        border-bottom: 4px solid primaryColor("200");
+                        position: relative;
+
+                        &::after{
+                            content:"";
+                            position: absolute;
+                            width: 0;
+                            height: 0;
+                            border-left: 10px solid transparent;
+                            border-right: 10px solid transparent;
+                            border-bottom: 10px solid transparent;
+                            border-top: 10px solid primaryColor("200");
+                            bottom: -33px;
+                            left: 7%;
+                            z-index: 1;
+                            transform: translate(-50%, -50%);
+                            transition: all 0.3s ease 0s;
+                        }
+                    }
+      
+                    .thumb-pic-box{
+                        position: relative;
+
+                        .thum-pic{
+                          width:100%;
+                          height: auto;
+                        }
+
+                        .overlay-box{
+                            width: 100%;
+                            position: absolute;
+                            height: 100%;
+                            top:0;
+                            left: 0;
+                            background-color: rgba(primaryColor("200"),0.6);
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            opacity: 0;
+                            transition: all 0.3s ease 0s;
+
+                            .icon-box{
+                                background-color: #fff;
+                                height: 107px;
+                                width: 107px;
+                                border-radius: 20px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                margin-top: -20px;
+                                
+                            }
+                        }
+      
+                    }
+
+                    &:hover{
+                        text-decoration: none;
+
+                       h4{
+                        border-bottom-color:#fff;
+
+                        &::after{
+                          border-top-color:#fff;
+                          left:50%;
+                          
+                        }
+                       }
+
+                        .overlay-box{
+                            opacity: 0.99;
+
+                            .icon-box{
+                                margin-top:0;
+                            }
+                        }
+                    }
+                    
+                }
+
+          }
+      }
+}

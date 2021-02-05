@@ -1,0 +1,94 @@
+// Application font-size Details
+@import 'font-calc';
+@import 'font-size';
+
+
+/****************** Color: Brand Variations *******************/
+
+$primaryShade: ("100" : #0D223F,
+  "200" : #057EE1,
+  "300" : #57585A);
+
+@function primaryColor($primary-color-name) {
+  @return map-get($primaryShade, $primary-color-name)
+}
+
+;
+
+
+$secondaryShade: ("100" : #F2F7FF,
+  "200" : #70D600,
+  "300" : #019DA4,
+  "400" : #E29E19,
+);
+
+
+@function secondaryColor($secondary-color-name) {
+  @return map-get($secondaryShade, $secondary-color-name)
+}
+
+;
+
+
+// Color: Black & White
+$blackColor : #000;
+$whiteColor : #fff;
+
+
+/****************** Header Section Color *******************/
+$headerBgColor : primaryColor("100");
+$headerTxtColor : darken($whiteColor, 20%);
+$headerTxtActive : $whiteColor;
+$headerdropdoenMenuTxtColor : $blackColor;
+
+
+/****************** body Section Color *******************/
+$bodyTxtColor : #292929;
+$bodyColor : #ECECEC;
+
+
+/****************** Section-block Color *******************/
+$sectionBgColor : #fff;
+$sectionBorderColor : #D0D1D3;
+
+/****************** Cards Section Color *******************/
+$cardbgColor :#fff;
+$cardhoverColor : secondaryColor("100");
+$cardhoverBrdrColor : primaryColor("200");
+$bodyTxtColor : #0D223F;
+
+
+/****************** quick links Color *******************/
+$iconBoxbgColor : secondaryColor("100");
+$iconBoxbrdrColor : primaryColor("200");
+$iconBoxbrdrhoverColor : secondaryColor("100");
+$quickLinkBgHovrColor : primaryColor("100");
+$quickLinktxtColor : primaryColor("100");
+$quickLinktxtHoverColor : #fff;
+
+
+/****************** btns Color *******************/
+$primaryBtnColor : primaryColor("200");
+$secondaryBtnColor : secondaryColor("100");
+$thirdBtnColor : secondaryColor("400");
+$addBtnColor : secondaryColor("200");
+$fouthBtnColor : secondaryColor("300");
+$deleteBtnColor : #CF2E2E;
+
+
+/****************** Top Nav*******************/
+$topNavBgColor : #000;
+$topNavHoverBgColor : primaryColor("200");
+$topNavTextColor : #fff;
+
+/****************** Hamburger Slide Nav *******************/
+$slideNavBgColor : primaryColor("100");
+$slideNavHoverBgColor : primaryColor("200");
+$slideNavTextColor : #fff;
+
+
+
+
+/****************** Footer Section Color *******************/
+$footerBgColor : primaryColor("100");
+$foterTxtColor : #fff;

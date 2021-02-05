@@ -1,0 +1,36 @@
+// Brand Fonts
+$brandFontName : ""Segoe UI Semilight","Segoe UI","Segoe",Tahoma,Helvetica,Arial,sans-serif";
+
+$fontFamily-base             : $brandFontName , sans-serif;
+
+// Typography: Font Sizes
+$fontSize-base               : 14px;
+
+$fontSize : (
+  "100"   : ceil(($fontSize-base * .571)),  //  8px
+  "200"   : ceil(($fontSize-base * .642)),  //  9px
+  "300"   : ceil(($fontSize-base * .714)),  // 10px
+  "400"   : ceil(($fontSize-base * .785)),  // 11px
+  "500"   : ceil(($fontSize-base * .857)),  // 12px
+  "600"   : ceil(($fontSize-base * .928)),  // 13px
+  "700"   : ceil(($fontSize-base * 1)),     // 14px
+  "800"   : ceil(($fontSize-base * 1.071)), // 15px
+  "900"   : ceil(($fontSize-base * 1.142)), // 16px
+  "1000"  : ceil(($fontSize-base * 1.214)), // 17px
+  "1100"  : ceil(($fontSize-base * 1.285)), // 18px
+  "1200"  : ceil(($fontSize-base * 1.357)), // 19px
+  "1300"  : ceil(($fontSize-base * 1.428)), // 20px
+  "1400"  : ceil(($fontSize-base * 1.5)),   // 21px
+  "1500"  : ceil(($fontSize-base * 1.571)), // 22px
+  "1600"  : ceil(($fontSize-base * 1.642)), // 23px
+  "1700"  : ceil(($fontSize-base * 1.714)), // 24px
+  "1800"  : ceil(($fontSize-base * 1.785)), // 25px
+  "1900"  : ceil(($fontSize-base * 1.857)), // 26px
+  "2000"  : ceil(($fontSize-base * 1.928)), // 27px
+  "2100"  : ceil(($fontSize-base * 2)),     // 28px
+  "2200"  : ceil(($fontSize-base * 2.142)), // 30px
+  "2300"  : ceil(($fontSize-base * 2.285)), // 32px
+  "2400"  : ceil(($fontSize-base * 2.571)), // 36px
+  "2500"  : ceil(($fontSize-base * 3.428))  // 48px
+);
+
